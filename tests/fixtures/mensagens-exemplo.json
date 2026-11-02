@@ -1,0 +1,21 @@
+[
+  { "texto": "quanto custa?", "esperado": "INFORMACAO" },
+  { "texto": "qual o valor da mensalidade?", "esperado": "INFORMACAO" },
+  { "texto": "como funciona?", "esperado": "INFORMACAO" },
+  { "texto": "quais opções vocês têm?", "esperado": "INFORMACAO" },
+  { "texto": "onde vocês ficam?", "esperado": "ENDERECO" },
+  { "texto": "qual o endereço?", "esperado": "ENDERECO" },
+  { "texto": "de que empresa vocês são?", "esperado": "ESCOLA" },
+  { "texto": "não quero, obrigado", "esperado": "NEGACAO" },
+  { "texto": "não tenho interesse", "esperado": "NEGACAO" },
+  { "texto": "não", "esperado": "NEGACAO" },
+  { "texto": "talvez, vou pensar", "esperado": "TALVEZ" },
+  { "texto": "vou pensar", "esperado": "TALVEZ" },
+  { "texto": "estou analisando", "esperado": "TALVEZ" },
+  { "texto": "sim, tenho interesse", "esperado": "INTERESSE" },
+  { "texto": "gostei, quero saber mais", "esperado": "INTERESSE" },
+  { "texto": "não sei ainda", "esperado": "NEUTRO" },
+  { "texto": "não entendi", "esperado": "NEUTRO" },
+  { "texto": "como assim?", "esperado": "NEUTRO" },
+  { "texto": "manda de novo", "esperado": "NEUTRO" }
+]

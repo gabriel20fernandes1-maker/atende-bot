@@ -1,0 +1,64 @@
+=========================================================
+  ATENDE BOT - GUIA RAPIDO
+=========================================================
+
+O QUE E
+  O bot envia uma mensagem para a lista de contatos perguntando se a pessoa
+  ainda tem interesse, responde automaticamente quem responder e avisa a
+  equipe quando alguem demonstra interesse.
+
+COMO COMECAR (faca uma vez)
+  1. Extraia a pasta inteira "atende-bot" num lugar fixo (ex.: C:\atende-bot).
+     IMPORTANTE: extraia de verdade. Nao rode de dentro do .zip.
+  2. Dentro da pasta, de duplo-clique em INICIAR.
+  3. Espere aparecer "Tudo pronto!" e o painel abrir no navegador.
+  4. No painel, em "Conectar / Trocar numero", pareie o WhatsApp (QR ou
+     codigo). Use o celular do numero que o bot vai usar.
+  5. Importe a lista de contatos na caixa grande e clique em
+     "Importar contatos".
+  6. Clique em "Enviar mensagens" para comecar.
+
+NAO PRECISA
+  - Instalar nada: o programa ja vem com tudo (Node portatil).
+  - Deixar janela preta aberta.
+
+NO DIA A DIA
+  1. Clique no atalho "Ligar Bia" (abre o painel no navegador).
+  2. Importe/atualize a lista quando precisar.
+  3. "Enviar mensagens" liga a campanha; "Pausar envios" para.
+
+QUANTAS MENSAGENS POR DIA
+  - Padrao: 20 por dia.
+  - Numero novo: NAO passe de 20. Volume alto e o que mais derruba conta.
+  - Para mudar: config.local.js (repique.porDia).
+  - O WhatsApp pode restringir numeros que mandam muita mensagem igual para
+    contatos frios. Comece devagar e so mande para quem ja teve contato.
+
+SEUS DADOS
+  - Nada fica dentro da pasta do programa.
+  - Windows: %LOCALAPPDATA%\bia-bot
+  - A lista importada, as mensagens recebidas e os logs sao apagados quando
+    voce usa "Desligar Bia". O bot lembra de quem pediu para sair, e isso
+    fica guardado de forma anonima.
+
+VER, EXPORTAR E REMOVER CONTATOS
+  - Abaixo da caixa aparece a lista de contatos (nome + telefone).
+  - "Exportar lista (.txt)" baixa um arquivo com a lista inteira.
+  - "Remover" ao lado de um contato tira so ele da lista.
+
+SE ALGO NAO FUNCIONAR
+  - O atalho nao abre? Espere 1 minuto e tente de novo.
+  - Continua sem abrir? De duplo-clique em INICIAR de novo.
+  - O Windows avisou sobre o arquivo? Clique em "Mais informacoes" e
+    "Executar assim mesmo".
+  - O bot nao responde? Confira a internet e se esta dentro do horario de
+    funcionamento configurado.
+  - Deu erro? Tire um print da janela e envie para quem te passou o bot.
+
+PARA DESLIGAR TUDO
+  - Use o atalho "Desligar Bia". Ele apaga a lista e os logs da sessao.
+
+IMPORTANTE
+  - Antes de disparar, confira no painel a mensagem da campanha e o endereco
+    configurado.
+  - Quem responder "nao" nao recebe mais nada. Isso e proposital.

@@ -1,0 +1,39 @@
+{
+  "name": "atende-bot",
+  "version": "0.3.0",
+  "description": "Atendimento para WhatsApp: painel local, campanha com teto diario, guards de escopo e opt-out.",
+  "main": "bot.js",
+  "scripts": {
+    "connect": "node connect.js",
+    "repicar": "node repicar.js",
+    "falar": "node falar.js",
+    "importar": "node importar.js",
+    "painel": "node painel.js",
+    "backup": "node backup.js",
+    "respostas": "node respostas-cli.js",
+    "simulate": "node simulate.js",
+    "bot": "node bot.js",
+    "smoke": "node bot.js --smoke",
+    "status": "node status.js",
+    "log:today": "node log-cli.js",
+    "test": "node --test tests/*.test.js",
+    "check": "node tests/check.js",
+    "pack": "node scripts/pack.js",
+    "privacidade": "node privacidade.js --status",
+    "limpar": "node privacidade.js --limpar",
+    "supervisor": "node supervisor.js",
+    "subir": "node controle.js subir",
+    "descer": "node controle.js descer",
+    "controle": "node controle.js status"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.12",
+    "pino": "^10.3.1",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "allowScripts": {
+    "@whiskeysockets/baileys@6.7.24": true,
+    "protobufjs@7.6.6": true
+  }
+}

@@ -1,0 +1,7 @@
+# Exemplo da lista de repique. Copie para data/numeros.txt e edite.
+# Formato: 55 + DDD + numero;Nome opcional
+# Linhas em branco e linhas com # sao ignoradas.
+
+5511900000000;Dona Maria
+5511900000000;Leon
+# 5511900000000;Cliente sem nome tambem vale

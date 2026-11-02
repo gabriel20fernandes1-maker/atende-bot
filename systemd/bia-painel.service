@@ -1,0 +1,29 @@
+# ============================================================
+# Painel da Bia como servico de usuario (systemd --user).
+#
+#   mkdir -p ~/.config/systemd/user
+#   cp systemd/bia-painel.service ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now bia-painel
+#   loginctl enable-linger $USER     # sobrevive a logout / roda sem sessao
+#
+# NAO existe unidade para o bot de proposito: a Bia so sobe quando o dono
+# clica em "Subir a Bia" no painel. O supervisor.js cuida de reerguer o bot
+# depois disso.
+#
+# Se mover a pasta do projeto, ajuste WorkingDirectory.
+# ============================================================
+[Unit]
+Description=Painel da Bia (http://127.0.0.1:3001)
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/Documentos/Projetos/Bia-Sistema-Windows11-2026-10-29-1540/bia-bot
+ExecStart=/usr/bin/env node painel.js
+Restart=always
+RestartSec=10
+# O painel e quem reergue o supervisor e o bot; ficar de pe e o trabalho dele.
+
+[Install]
+WantedBy=default.target

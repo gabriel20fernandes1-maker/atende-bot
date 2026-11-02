@@ -1,0 +1,28 @@
+# Dados de execucao - NUNCA versionar
+# A sessao do WhatsApp, a lista de contatos e o estado vivem fora do projeto
+# (privacidade.js). Estas linhas sao a rede de seguranca para o caso de alguem
+# rodar uma versao antiga ou copiar a pasta de dados para ca.
+auth/
+auth-*/
+auth-*-*/
+data/
+backups/
+legado/
+*.zip
+
+# Configuracao pessoal (empresa, equipe, textos)
+config.local.js
+.env
+.env.*
+
+# Runtime portatil do Windows (89 MB, gerado pelo instalar.ps1)
+runtime/
+
+# Dependencias e saidas
+node_modules/
+dist/
+*.log
+*.out
+*.err
+.tmp/
+pedido-sonda
